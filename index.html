@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CYBER OPS // Military Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Efeitos decorativos do fundo -->
+    <div class="grid-background"></div>
+    <div class="scanline"></div>
+
+    <main class="terminal">
+
+        <!-- CABEÇALHO -->
+        <header class="top-bar">
+
+            <div class="system-name">
+                <span class="status-dot"></span>
+                CYBER OPS
+            </div>
+
+            <div class="system-info">
+                MILITARY TECHNOLOGY // DATABASE
+            </div>
+
+            <div class="system-status">
+                SYSTEM: <strong>ONLINE</strong>
+            </div>
+
+        </header>
+
+
+        <!-- TELA INICIAL -->
+        <section id="start-screen" class="screen active">
+
+            <div class="classification">
+                // CLASSIFIED DATABASE //
+            </div>
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    ◈
+                </div>
+
+                <h1>CYBER <span>OPS</span></h1>
+
+                <p>MILITARY TECHNOLOGY DATABASE</p>
+
+            </div>
+
+            <div class="warning-box">
+
+                <div class="warning-title">
+                    ⚠ SYSTEM BRIEFING
+                </div>
+
+                <p>
+                    Bem-vindo ao banco de dados CYBER OPS.
+                    Teste seus conhecimentos sobre aeronaves,
+                    veículos blindados, navios, sensores e
+                    sistemas militares.
+                </p>
+
+            </div>
+
+            <div class="mission-info">
+
+                <div>
+                    <span>MISSION</span>
+                    <strong>01</strong>
+                </div>
+
+                <div>
+                    <span>QUESTIONS</span>
+                    <strong>10</strong>
+                </div>
+
+                <div>
+                    <span>DIFFICULTY</span>
+                    <strong>HIGH</strong>
+                </div>
+
+            </div>
+
+            <button id="start-button" class="cyber-button">
+                <span>▶</span> INITIALIZE MISSION
+            </button>
+
+            <p class="connection">
+                CONNECTION: SECURE // DATABASE: READY
+            </p>
+
+        </section>
+
+
+        <!-- TELA DO JOGO -->
+        <section id="game-screen" class="screen">
+
+            <!-- HUD -->
+            <div class="hud">
+
+                <div class="hud-item">
+                    <span>MISSION</span>
+                    <strong id="question-number">01</strong>
+                </div>
+
+                <div class="hud-item">
+                    <span>SCORE</span>
+                    <strong id="score">0000</strong>
+                </div>
+
+                <div class="hud-item">
+                    <span>STATUS</span>
+                    <strong class="online">ONLINE</strong>
+                </div>
+
+            </div>
+
+
+            <!-- BARRA DE PROGRESSO -->
+            <div class="progress-area">
+
+                <div class="progress-label">
+                    <span>MISSION PROGRESS</span>
+                    <span id="progress-text">10%</span>
+                </div>
+
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIA -->
+            <div class="question-category" id="category">
+                AIRCRAFT SYSTEMS
+            </div>
+
+
+            <!-- PERGUNTA -->
+            <div class="question-panel">
+
+                <div class="panel-corner top-left"></div>
+                <div class="panel-corner top-right"></div>
+                <div class="panel-corner bottom-left"></div>
+                <div class="panel-corner bottom-right"></div>
+
+                <span class="question-tag">
+                    // INCOMING QUESTION
+                </span>
+
+                <h2 id="question">
+                    Carregando dados...
+                </h2>
+
+            </div>
+
+
+            <!-- ALTERNATIVAS -->
+            <div id="answers" class="answers">
+                <!-- Criadas pelo JavaScript -->
+            </div>
+
+
+            <!-- FEEDBACK -->
+            <div id="feedback" class="feedback"></div>
+
+        </section>
+
+
+        <!-- TELA FINAL -->
+        <section id="result-screen" class="screen">
+
+            <div class="result-symbol">
+                ◈
+            </div>
+
+            <div class="classification">
+                // MISSION REPORT //
+            </div>
+
+            <h1 class="result-title">
+                MISSION COMPLETE
+            </h1>
+
+            <p id="result-message" class="result-message">
+                Relatório sendo processado...
+            </p>
+
+            <div class="final-score">
+
+                <span>FINAL SCORE</span>
+
+                <strong id="final-score">
+                    0000
+                </strong>
+
+                <small>POINTS</small>
+
+            </div>
+
+            <div class="result-status">
+                <span class="status-dot"></span>
+                DATABASE CONNECTION TERMINATED
+            </div>
+
+            <button id="restart-button" class="cyber-button">
+                ↻ RESTART MISSION
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        CYBER OPS // MILITARY TECHNOLOGY // EDUCATIONAL PROJECT
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
